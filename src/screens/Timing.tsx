@@ -1,6 +1,7 @@
 import {View, Text, Animated, TouchableOpacity, StyleSheet} from 'react-native';
 import {useRef} from 'react';
 import React from 'react';
+import FadeInView from '../components/FadeInView';
 
 export default function Timing() {
   const fadeInOut = useRef(new Animated.Value(0)).current;
@@ -33,6 +34,7 @@ export default function Timing() {
       <TouchableOpacity onPress={fadeOut} style={styles.buttonFadeOut}>
         <Text style={styles.buttonText}>Fade Out </Text>
       </TouchableOpacity>
+      <FadeInView />
     </View>
   );
 }
