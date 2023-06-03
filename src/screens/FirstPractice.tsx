@@ -9,7 +9,7 @@ export default function FirstPractice() {
     console.log('Working');
     Animated.timing(aniRef, {
       toValue: moved ? 0 : 1,
-      duration: 1000,
+      // duration: 1000,
       useNativeDriver: true,
     }).start();
   };
