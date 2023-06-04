@@ -28,12 +28,12 @@ export default function FirstPractice() {
                   outputRange: [0, 100],
                 }),
               },
-              //   {
-              //     translateX: aniRef.interpolate({
-              //       inputRange: [0, 1],
-              //       outputRange: [0, -50],
-              //     }),
-              //   },
+              {
+                translateX: aniRef.interpolate({
+                  inputRange: [0, 1],
+                  outputRange: [0, -50],
+                }),
+              },
               {
                 rotate: aniRef.interpolate({
                   inputRange: [0, 1],
