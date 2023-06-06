@@ -23,10 +23,17 @@ export default function ReAnimated1() {
       <TouchableOpacity
         style={styles.button}
         onPress={() => {
-          setClicked(!clicked);
-          animatedValue.value = withTiming(100, {
-            duration: 5000,
-          });
+          if (clicked) {
+            animatedValue.value = withTiming(0, {
+              duration: 1000,
+            });
+            setClicked(!clicked);
+          } else {
+            animatedValue.value = withTiming(50, {
+              duration: 1000,
+            });
+            setClicked(!clicked);
+          }
         }}>
         <Text>Click</Text>
       </TouchableOpacity>
