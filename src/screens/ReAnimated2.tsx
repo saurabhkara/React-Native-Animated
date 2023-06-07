@@ -29,7 +29,7 @@ export default function ReAnimated2() {
   return (
     <View style={styles.container}>
       <View style={styles.animatedContainer}>
-        <Animated.View style={[styles.animateSquare, animatedStyle]} />
+        <Animated.View style={[animatedStyle, styles.animateSquare]} />
       </View>
       <TouchableOpacity
         style={styles.button}
