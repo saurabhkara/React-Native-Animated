@@ -8,7 +8,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 export default function ReAnimated1() {
-  const animatedValue = useSharedValue(1);
+  const animatedValue = useSharedValue(0);
   const [clicked, setClicked] = useState(false);
   const styleAni = useAnimatedStyle(() => {
     return {
@@ -24,7 +24,7 @@ export default function ReAnimated1() {
         style={styles.button}
         onPress={() => {
           if (clicked) {
-            animatedValue.value = withTiming(0, {
+            animatedValue.value = withTiming(-20, {
               duration: 1000,
             });
             setClicked(!clicked);
