@@ -8,8 +8,9 @@ import React from 'react';
 // import ReAnimated2 from './src/screens/ReAnimated2';
 // import ScrollAnimation from './src/screens/ScrollAnimation';
 // import DropDownTask from './src/screens/DropDownTask';
-import ReAnimated3 from './src/screens/ReAnimated3';
+// import ReAnimated3 from './src/screens/ReAnimated3';
+import ReAnimated4 from './src/screens/ReAnimated4';
 
 export default function App() {
-  return <ReAnimated3 />;
+  return <ReAnimated4 />;
 }

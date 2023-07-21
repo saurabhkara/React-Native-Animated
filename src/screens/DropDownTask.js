@@ -41,7 +41,7 @@ const DropDownTask = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <View style={{alignItems: 'center', marginTop: 25}}>
-        <Text>{time} </Text>
+        <Text style={{fontSize: 20, fontWeight: 'bold'}}>{time} </Text>
       </View>
       <View style={styles.container}>
         {renderLabel()}
